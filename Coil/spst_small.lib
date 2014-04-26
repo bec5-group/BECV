@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3  Date: 2014年04月26日 星期六 12时09分30秒
+#encoding utf-8
+#
+# SPST_SMALL
+#
+DEF SPST_SMALL SW 0 40 Y Y 1 F N
+F0 "SW" 0 -50 60 H V C CNN
+F1 "SPST_SMALL" 0 100 60 H V C CNN
+F2 "~" 0 0 60 H V C CNN
+F3 "~" 0 0 60 H V C CNN
+DRAW
+C -100 0 14 0 1 0 N
+C 100 0 14 0 1 0 N
+P 2 0 1 0  100 0  -100 50 N
+X ~ 1 -200 0 100 R 50 50 1 1 B
+X ~ 2 200 0 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

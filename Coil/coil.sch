@@ -1,0 +1,470 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:spst_small
+LIBS:coil-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "26 apr 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L INDUCTOR L?
+U 1 1 535BD704
+P 3250 2050
+F 0 "L?" V 3200 2050 40  0001 C CNN
+F 1 "1T" V 3350 2050 100 0000 C CNB
+F 2 "~" H 3250 2050 60  0000 C CNN
+F 3 "~" H 3250 2050 60  0000 C CNN
+	1    3250 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 535BD722
+P 4050 2050
+F 0 "L?" V 4000 2050 40  0001 C CNN
+F 1 "2T" V 4150 2050 100 0000 C CNB
+F 2 "~" H 4050 2050 60  0000 C CNN
+F 3 "~" H 4050 2050 60  0000 C CNN
+	1    4050 2050
+	0    -1   -1   0   
+$EndComp
+Text Label 2950 2050 3    80   ~ 16
+1T Out
+Text Label 3550 2050 3    80   ~ 16
+1T In
+Text Label 3750 2050 3    80   ~ 16
+2T Out
+Text Label 4350 2050 3    80   ~ 16
+2T In
+$Comp
+L DIODE D?
+U 1 1 535BD84A
+P 5050 2050
+F 0 "D?" H 5050 2150 40  0001 C CNN
+F 1 "Diode2" H 5050 1950 100 0000 C CNB
+F 2 "~" H 5050 2050 60  0000 C CNN
+F 3 "~" H 5050 2050 60  0000 C CNN
+	1    5050 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L SPST_SMALL SW?
+U 1 1 535BDAB3
+P 5600 2050
+F 0 "SW?" H 5600 2000 60  0001 C CNN
+F 1 "IGBT2" H 5600 2150 100 0000 C CNB
+F 2 "~" H 5600 2050 60  0000 C CNN
+F 3 "~" H 5600 2050 60  0000 C CNN
+	1    5600 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 4600 2200 0    200  ~ 40
+I
+$Comp
+L BATTERY BT?
+U 1 1 535BDC33
+P 5850 2450
+F 0 "BT?" H 5850 2650 50  0001 C CNN
+F 1 "Lambda" H 5850 2260 100 0000 C CNB
+F 2 "~" H 5850 2450 60  0000 C CNN
+F 3 "~" H 5850 2450 60  0000 C CNN
+	1    5850 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 535BDD46
+P 2400 5050
+F 0 "L?" V 2350 5050 40  0001 C CNN
+F 1 "1B" V 2500 5050 100 0000 C CNB
+F 2 "~" H 2400 5050 60  0000 C CNN
+F 3 "~" H 2400 5050 60  0000 C CNN
+	1    2400 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 535BDD4C
+P 2400 4250
+F 0 "L?" V 2350 4250 40  0001 C CNN
+F 1 "2B" V 2500 4250 100 0000 C CNB
+F 2 "~" H 2400 4250 60  0000 C CNN
+F 3 "~" H 2400 4250 60  0000 C CNN
+	1    2400 4250
+	-1   0    0    1   
+$EndComp
+Text Label 2400 5350 0    80   ~ 16
+1B Out
+Text Label 2400 4750 0    80   ~ 16
+1B In
+Text Label 2400 4550 0    80   ~ 16
+2B Out
+Text Label 2400 3950 0    80   ~ 16
+2B In
+Text Notes 2550 3700 2    200  ~ 40
+III
+$Comp
+L DIODE D?
+U 1 1 535BDDE7
+P 2400 3000
+F 0 "D?" H 2400 3100 40  0001 C CNN
+F 1 "Diode3" H 2400 2900 100 0000 C CNB
+F 2 "~" H 2400 3000 60  0000 C CNN
+F 3 "~" H 2400 3000 60  0000 C CNN
+	1    2400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST_SMALL SW?
+U 1 1 535BDDED
+P 2400 2450
+F 0 "SW?" H 2400 2400 60  0001 C CNN
+F 1 "IGBT3" H 2400 2550 100 0000 C CNB
+F 2 "~" H 2400 2450 60  0000 C CNN
+F 3 "~" H 2400 2450 60  0000 C CNN
+	1    2400 2450
+	0    -1   -1   0   
+$EndComp
+Text Notes 2550 2200 0    200  ~ 40
+V
+$Comp
+L DIODE D?
+U 1 1 535BE034
+P 3450 3300
+F 0 "D?" H 3450 3400 40  0001 C CNN
+F 1 "Diode4" H 3450 3200 100 0000 C CNB
+F 2 "~" H 3450 3300 60  0000 C CNN
+F 3 "~" H 3450 3300 60  0000 C CNN
+	1    3450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST_SMALL SW?
+U 1 1 535BE03A
+P 2900 3300
+F 0 "SW?" H 2900 3250 60  0001 C CNN
+F 1 "IGBT4" H 2900 3400 100 0000 C CNB
+F 2 "~" H 2900 3300 60  0000 C CNN
+F 3 "~" H 2900 3300 60  0000 C CNN
+	1    2900 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 535BE0C5
+P 3250 5950
+F 0 "D?" H 3250 6050 40  0001 C CNN
+F 1 "Diode5" H 3250 5850 100 0000 C CNB
+F 2 "~" H 3250 5950 60  0000 C CNN
+F 3 "~" H 3250 5950 60  0000 C CNN
+	1    3250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST_SMALL SW?
+U 1 1 535BE0CB
+P 2700 5950
+F 0 "SW?" H 2700 5900 60  0001 C CNN
+F 1 "IGBT5" H 2700 6050 100 0000 C CNB
+F 2 "~" H 2700 5950 60  0000 C CNN
+F 3 "~" H 2700 5950 60  0000 C CNN
+	1    2700 5950
+	-1   0    0    1   
+$EndComp
+Text Notes 2550 5850 2    200  ~ 40
+VI
+$Comp
+L DIODE D?
+U 1 1 535BE158
+P 1900 4200
+F 0 "D?" H 1900 4300 40  0001 C CNN
+F 1 "Diode6" H 1900 4100 100 0000 C CNB
+F 2 "~" H 1900 4200 60  0000 C CNN
+F 3 "~" H 1900 4200 60  0000 C CNN
+	1    1900 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST_SMALL SW?
+U 1 1 535BE15E
+P 1900 3650
+F 0 "SW?" H 1900 3600 60  0001 C CNN
+F 1 "IGBT6" H 1900 3750 100 0000 C CNB
+F 2 "~" H 1900 3650 60  0000 C CNN
+F 3 "~" H 1900 3650 60  0000 C CNN
+	1    1900 3650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2400 5950
+Wire Wire Line
+	2400 5350 2400 5950
+Wire Wire Line
+	1900 5950 2500 5950
+Wire Wire Line
+	1900 4400 1900 5950
+Connection ~ 2400 2050
+Wire Wire Line
+	1900 2050 1900 3450
+Wire Wire Line
+	1900 4000 1900 3850
+Wire Wire Line
+	3050 5950 2900 5950
+Wire Wire Line
+	3250 3300 3100 3300
+Wire Wire Line
+	2400 3200 2400 3950
+Wire Wire Line
+	1900 2050 2950 2050
+Wire Wire Line
+	2400 2250 2400 2050
+Wire Wire Line
+	2400 2800 2400 2650
+Wire Notes Line
+	2900 5550 2150 5550
+Wire Notes Line
+	2900 3800 2900 5550
+Wire Notes Line
+	2150 3800 2900 3800
+Wire Notes Line
+	2150 5550 2150 3800
+Wire Wire Line
+	2400 4750 2400 4550
+Wire Wire Line
+	4350 2050 4850 2050
+Wire Wire Line
+	5250 2050 5400 2050
+Wire Notes Line
+	2750 2550 2750 1800
+Wire Notes Line
+	4500 2550 2750 2550
+Wire Notes Line
+	4500 1800 4500 2550
+Wire Notes Line
+	2750 1800 4500 1800
+Wire Wire Line
+	3550 2050 3750 2050
+$Comp
+L INDUCTOR L?
+U 1 1 535BE2C1
+P 5050 5950
+F 0 "L?" V 5000 5950 40  0001 C CNN
+F 1 "4B" V 5150 5950 100 0000 C CNB
+F 2 "~" H 5050 5950 60  0000 C CNN
+F 3 "~" H 5050 5950 60  0000 C CNN
+	1    5050 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 535BE2C7
+P 4250 5950
+F 0 "L?" V 4200 5950 40  0001 C CNN
+F 1 "4T" V 4350 5950 100 0000 C CNB
+F 2 "~" H 4250 5950 60  0000 C CNN
+F 3 "~" H 4250 5950 60  0000 C CNN
+	1    4250 5950
+	0    1    1    0   
+$EndComp
+Text Label 5350 5950 1    80   ~ 16
+4B Out
+Text Label 4750 5950 1    80   ~ 16
+4B In
+Text Label 4550 5950 1    80   ~ 16
+4T Out
+Text Label 3950 5950 1    80   ~ 16
+4T In
+Text Notes 3550 6100 0    200  ~ 40
+II
+Wire Wire Line
+	4750 5950 4550 5950
+Wire Notes Line
+	3800 6200 3800 5450
+$Comp
+L INDUCTOR L?
+U 1 1 535BE366
+P 5850 5250
+F 0 "L?" V 5800 5250 40  0001 C CNN
+F 1 "3B" V 5950 5250 100 0000 C CNB
+F 2 "~" H 5850 5250 60  0000 C CNN
+F 3 "~" H 5850 5250 60  0000 C CNN
+	1    5850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 535BE36C
+P 5850 4400
+F 0 "L?" V 5800 4400 40  0001 C CNN
+F 1 "3T" V 5950 4400 100 0000 C CNB
+F 2 "~" H 5850 4400 60  0000 C CNN
+F 3 "~" H 5850 4400 60  0000 C CNN
+	1    5850 4400
+	1    0    0    -1  
+$EndComp
+Text Label 5850 4950 2    80   ~ 16
+3B Out
+Text Label 5850 5550 2    80   ~ 16
+3B In
+Text Label 5850 4100 2    80   ~ 16
+3T Out
+Text Label 5850 4700 2    80   ~ 16
+3T In
+Wire Wire Line
+	5850 5550 5850 5950
+Wire Wire Line
+	5350 5950 7100 5950
+Wire Wire Line
+	5850 4950 5850 4700
+Wire Wire Line
+	5800 2050 5850 2050
+Wire Wire Line
+	5850 2050 5850 2150
+Wire Wire Line
+	5850 2750 5850 4100
+Wire Wire Line
+	3650 3300 7100 3300
+Connection ~ 5850 3300
+Wire Wire Line
+	3450 5950 3950 5950
+Wire Notes Line
+	3800 5450 5400 5450
+Wire Notes Line
+	5400 5450 5400 3900
+Wire Notes Line
+	5400 3900 6050 3900
+Wire Notes Line
+	6050 3900 6050 6200
+Wire Notes Line
+	6050 6200 3800 6200
+Wire Wire Line
+	2700 3300 2400 3300
+Connection ~ 2400 3300
+Text Notes 6100 6050 0    150  ~ 30
+MOT
+$Comp
+L DIODE D?
+U 1 1 535BE895
+P 6600 5450
+F 0 "D?" H 6600 5550 40  0001 C CNN
+F 1 "Diode1" H 6600 5350 100 0000 C CNB
+F 2 "~" H 6600 5450 60  0000 C CNN
+F 3 "~" H 6600 5450 60  0000 C CNN
+	1    6600 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST_SMALL SW?
+U 1 1 535BE89B
+P 6600 4900
+F 0 "SW?" H 6600 4850 60  0001 C CNN
+F 1 "IGBT1" H 6600 5000 100 0000 C CNB
+F 2 "~" H 6600 4900 60  0000 C CNN
+F 3 "~" H 6600 4900 60  0000 C CNN
+	1    6600 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 5250 6600 5100
+$Comp
+L BATTERY BT?
+U 1 1 535BE8AD
+P 6600 4250
+F 0 "BT?" H 6600 4450 50  0001 C CNN
+F 1 "Sorenson" H 6600 4060 100 0000 C CNB
+F 2 "~" H 6600 4250 60  0000 C CNN
+F 3 "~" H 6600 4250 60  0000 C CNN
+	1    6600 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 3300 6600 3950
+Wire Wire Line
+	6600 4550 6600 4700
+Wire Wire Line
+	6600 5950 6600 5650
+Connection ~ 5850 5950
+$Comp
+L CP1 C?
+U 1 1 535BEA47
+P 7100 4250
+F 0 "C?" H 7150 4350 50  0001 L CNN
+F 1 "MT Boost" V 6900 3950 100 0000 L CNB
+F 2 "~" H 7100 4250 60  0000 C CNN
+F 3 "~" H 7100 4250 60  0000 C CNN
+	1    7100 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 535BEA8F
+P 7100 5450
+F 0 "D?" H 7100 5550 40  0001 C CNN
+F 1 "Diode_C" H 7100 5550 100 0000 C CNB
+F 2 "~" H 7100 5450 60  0000 C CNN
+F 3 "~" H 7100 5450 60  0000 C CNN
+	1    7100 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST_SMALL SW?
+U 1 1 535BEA95
+P 7100 4900
+F 0 "SW?" H 7100 4850 60  0001 C CNN
+F 1 "IGBT_C" H 7100 5000 100 0000 C CNB
+F 2 "~" H 7100 4900 60  0000 C CNN
+F 3 "~" H 7100 4900 60  0000 C CNN
+	1    7100 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 5250 7100 5100
+Wire Wire Line
+	7100 3300 7100 4050
+Connection ~ 6600 3300
+Wire Wire Line
+	7100 5950 7100 5650
+Connection ~ 6600 5950
+Wire Wire Line
+	7100 4450 7100 4700
+Text Notes 5950 3800 2    200  ~ 40
+IV
+$EndSCHEMATC
